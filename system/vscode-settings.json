@@ -1,0 +1,107 @@
+{
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "files.associations": {
+        // "*.twig": "html",
+        "*.html": "twig"
+    },
+    "workbench.colorTheme": "Dracula",
+    "scss.validate": false,
+    "editor.fontFamily": "Operator Mono, MonoLisa, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "twig": "html"
+    },
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "git.autofetch": true,
+    "editor.minimap.enabled": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "todo-tree.tree.showScanModeButton": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.welcomePage.hiddenCategories": [
+        "Setup",
+        "Beginner"
+    ],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "jest.autoEnable": false,
+    "jest.runAllTestsFirst": false,
+    "jest.showCoverageOnLoad": false,
+    "jest.disabledWorkspaceFolders": [
+    
+    ],
+    "php.suggest.basic": false,
+    "php.validate.enable": false,
+    "intelephense.files.maxSize": 10000000,
+    "intelephense.maxMemory": 256,
+    "cmake.generator": "Unix Makefiles",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "editor.fontSize": 14,
+    "files.exclude": {
+        "**/languages": true,
+        "**/plugins": true,
+        "**/wp-admin": true,
+        "**/wp-includes": true
+    },
+      // See the VIM extension docs for more details
+  "vim.leader": "<space>",
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      // By default, "p" in visual mode will copy whatever text was replaced. To prevent this, after pasting, select the newly replaced text and copy it.
+      "before": [
+        "p"
+      ],
+      "after": [
+        "p",
+        "g",
+        "v",
+        "y"
+      ]
+    },
+    // Bind > and < in visual mode to indent/outdent lines (repeatable)
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Turn off VIM's search highlighting
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "h"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+  ],
+}
